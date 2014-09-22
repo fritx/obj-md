@@ -1,6 +1,6 @@
 {
   "name": "obj-md",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parses js obj to markdown",
   "repository": "git@github.com:fritx/obj-md.git",
   "dependencies": {

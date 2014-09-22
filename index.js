@@ -18,10 +18,12 @@ function parseMd(mdObj){
       } else { // unordered list
         prefix = '-'
       }
-      _.each(o, function(v){
-        md += prefix + ' ' + v + '\n'
-      })
-      md += '\n'
+      if (o.length > 0) { // ignore empty list
+        _.each(o, function(v){
+          md += prefix + ' ' + v + '\n'
+        })
+        md += '\n'  
+      }
     } else if (_.isObject(o)) {
       _.each(o, function(v, k){
         md += k + '\n\n'
